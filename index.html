@@ -4,6 +4,15 @@
 <link rel="stylesheet" type="text/css" href="flower.css">
 	<title>Flower Catlog</title>
 </head>
+<script type="text/javascript">
+	function hideFun(){
+		document.getElementById('demo').style.visibility= "hidden";
+		setTimeout(showFun,1000)
+	}
+	function showFun(){
+		document.getElementById('demo').style.visibility="visible"
+	}
+</script>
 <body>
 	<div id="left">
 		<h2>Flower Catalog</h2>
@@ -16,7 +25,7 @@
 			<li><a href="Abeliophyllum.html" style="font-size:25px">Abeliophyllum</a></li>
 			<li><a href="Ageratum.html" style="font-size:25px">Ageratum</a></li>
 		</ul>
-			<ul><img src="animation.gif"></ul>
+			<ul><img src="animation.gif" onclick="hideFun()" id="demo"></ul>
 			<ul><a href="guestbook.html" style="font-size:25px">Guest Book</a></ul>
 	</div>
 </body>
